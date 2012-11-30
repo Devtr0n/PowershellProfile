@@ -1,4 +1,4 @@
-﻿# set output window size
+# set output window size
 $host.UI.RawUI.BufferSize = new-object System.Management.Automation.Host.Size(1000,1000);
 ########################################################## FUNCTIONS #####################################################
 function gotoworkspace{set-location C:\Workspace}
@@ -9,6 +9,12 @@ function gotomsdf{set-location C:\Workspace\MSDF}
 function gotolr{set-location C:\Workspace\LittleRockSD}
 function gotolrcore{set-location C:\Workspace\LittleRockSD\Ed-Fi-Core}
 function gotolrapps{set-location C:\Workspace\LittleRockSD\Ed-Fi-Apps}
+function gototx{set-location C:\Workspace\TexasEA}
+function gototxcore{set-location C:\Workspace\TexasEA\Ed-Fi-Core}
+function gototxapps{set-location C:\Workspace\TexasEA\Ed-Fi-Apps}
+function gotodlp{set-location C:\Workspace\DoubleLinePartners}
+function gotodlpcore{set-location C:\Workspace\DoubleLinePartners\Ed-Fi-Core}
+function gotodlpapps{set-location C:\Workspace\DoubleLinePartners\Ed-Fi-Apps}
 
 # find explicit text in all Workspace powershell scripts
 function findTextInWorkspace ([string] $text)
@@ -82,3 +88,9 @@ set-alias lr gotolr
 set-alias tools gototools
 set-alias msdf gotomsdf
 set-alias workspace gotoworkspace
+set-alias tx gototx
+set-alias txcore gototxcore
+set-alias txapps gototxapps
+set-alias dlp gotodlp
+set-alias dlpcore gotodlpcore
+set-alias dlpapps gotodlpapps
