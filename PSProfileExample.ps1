@@ -4,15 +4,15 @@ $host.UI.RawUI.BufferSize = new-object System.Management.Automation.Host.Size(10
 function Go-To-SCRs	 			{ Invoke-Item ([Environment]::GetFolderPath("MyDocuments")+'\SCRs\') }
 function Open-Music	 			{ Invoke-Item 'C:\Users\rhollon\Music\music' }
 function Open-Code				{ Invoke-Item 'C:\Code\Solution' }
-function Open-Workspace			{ Invoke-Item 'C:\Workspace' }
+function Open-Workspace				{ Invoke-Item 'C:\Workspace' }
 function Play-Music				{ &'C:\Program Files (x86)\Windows Media Player\wmplayer.exe' 'C:\Users\Public\Music\Playlists\Everything.wpl' }
 function Get-News				{ Start-Process chrome 'news.google.com', 'www.kxan.com', 'www.kvue.com' }
-function Get-Weather			{ Invoke-RestMethod -Uri 'http://api.openweathermap.org/data/2.5/weather?q=Austin&units=imperial&appid=29e93877808a06ff4ee3973341218b29' }
-function Intialize-Dev 			{ vs; npp; sql; ie; kee; track; vm; mail; }
-function Alice-In-Wonderland 	{ Open-PDF ('https://www.gutenberg.org/files/11/11-pdf.pdf'); }
-function MVC4-In-Action 		{ Open-PDF ('http://www.karlcassar.com/pub/ebooks/Palermo%20J.%20-%20ASP.NET%20MVC%204%20in%20Action%20-%202012.pdf'); }
-function Get-Powershell-Version	{ $PSVersionTable.PSVersion }
-function Open-Jenkins			{ Start-Process chrome 'http://192.XXX.XXX.XXX:8080/' }
+function Get-Weather				{ Invoke-RestMethod -Uri 'http://api.openweathermap.org/data/2.5/weather?q=Austin&units=imperial&appid=29e93877808a06ff4ee3973341218b29' }
+function Intialize-Dev 				{ vs; npp; sql; ie; kee; track; vm; mail; }
+function Alice-In-Wonderland 			{ Open-PDF ('https://www.gutenberg.org/files/11/11-pdf.pdf'); }
+function MVC4-In-Action 			{ Open-PDF ('http://www.karlcassar.com/pub/ebooks/Palermo%20J.%20-%20ASP.NET%20MVC%204%20in%20Action%20-%202012.pdf'); }
+function Get-Powershell-Version			{ $PSVersionTable.PSVersion }
+function Open-Jenkins				{ Start-Process chrome 'http://192.XXX.XXX.XXX:8080/' }
 
 function Open-PDF(
 [string]$url
@@ -194,12 +194,12 @@ set-alias chrome 		"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 set-alias vsnet			"C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe"
 set-alias skype			"C:\Program Files\Microsoft Office 15\root\office15\lync.exe"
 set-alias msword		"C:\Program Files\Microsoft Office 15\root\office15\WINWORD.EXE"
-set-alias wireshark 	"C:\Program Files\Wireshark\Wireshark.exe"
+set-alias wireshark 		"C:\Program Files\Wireshark\Wireshark.exe"
 set-alias tracker 		"C:\Program Files (x86)\Merant\Tracker\nt\pvcstkn.exe"
 set-alias vm			"C:\Program Files (x86)\Serena\vm\win32\bin\pvcsvmnt.exe"
 set-alias inetpub		"C:\Windows\System32\inetsrv\InetMgr.exe"
-set-alias smartgit  	"C:\Program Files (x86)\SmartGit\bin\smartgit.exe"
-set-alias fiddler   	"C:\Program Files (x86)\Fiddler2\Fiddler.exe"
+set-alias smartgit  		"C:\Program Files (x86)\SmartGit\bin\smartgit.exe"
+set-alias fiddler   		"C:\Program Files (x86)\Fiddler2\Fiddler.exe"
 set-alias iexplorer		"C:\Program Files (x86)\Internet Explorer\iexplore.exe"
 set-alias adobe			"C:\Program Files (x86)\Adobe\Acrobat 11.0\Acrobat\Acrobat.exe"
 set-alias excel			"C:\Program Files\Microsoft Office 15\root\office15\EXCEL.EXE"
@@ -210,19 +210,19 @@ set-alias outlook		"C:\Program Files\Microsoft Office 15\root\office15\OUTLOOK.E
 set-alias alice			Alice-In-Wonderland
 set-alias csd			Create-SCR-Directory
 set-alias cs			Create-SCR-Directory
-set-alias findtext  	Find-Text-In-Directory
-set-alias codefind  	Find-Text-In-Code-Directory
-set-alias getfoldersize Get-Folder-Size
+set-alias findtext  		Find-Text-In-Directory
+set-alias codefind  		Find-Text-In-Code-Directory
+set-alias getfoldersize 	Get-Folder-Size
 set-alias gfs			Get-Folder-Size
 set-alias getnews		Get-News
 set-alias news			Get-News
-set-alias getweather 	Get-Weather
+set-alias getweather 		Get-Weather
 set-alias weather		Get-Weather
 set-alias gotoscrs		Go-To-SCRs
 set-alias scrs 			Go-To-SCRs
 set-alias scr 			Go-To-SCRs
 set-alias dev			Intialize-Dev
-set-alias environment   Intialize-Dev
+set-alias environment   	Intialize-Dev
 set-alias env			Intialize-Dev
 set-alias mvc4			MVC4-In-Action
 set-alias mvc			MVC4-In-Action
